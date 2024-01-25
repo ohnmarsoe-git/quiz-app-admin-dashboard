@@ -1,84 +1,50 @@
-# Quiz App Project Description
+# Overview
 
-This project is to build a quiz app using the MERN stack, which consists of MongoDB, Express.js, React.js, and Node.js. The app will allow users to create accounts, take quizzes on a variety of topics, and track their progress. Inspired from linkedinskillasseessment.
+Building a dynamic and user-friendly admin dashboard for a quiz application using React.js, React Context API/Reducer for state management, and Axios for seamless API interactions. The frontend will incorporate login/logout authentication with a refresh token, persistent login functionality without saving sensitive data in browser storage, and comprehensive CRUD forms for managing questions, answers, and users.
 
-# Web URL
-https://quiz-app-react-23.netlify.app/
+# Technology Stack:
+Frontend Library: React.js
+State Management: React Context API/Reducer
+HTTP Requests: Axios
 
-# Backend
+# Key Features:
+## Authentication with Refresh Token:
 
-The backend of the app will be built using Node.js and Express.js. It will expose a REST API that the frontend can use to interact with the database. The backend will also be responsible for handling user authentication and authorization.
+- Implementing a secure login/logout system with the use of Axios.
+Utilizing refresh tokens to extend user sessions, enhancing the application's security.
 
-# Features
+## Persistent Login:
 
-# Client View
+- Enabling persistent login functionality without storing sensitive data like tokens in browser cookies, sessions, or local storage.
+Providing a secure and seamless user experience across sessions.
 
-The quiz app will include the following features:
+## Admin Dashboard:
 
-- User Account: Users can create accounts to track their progress and compete with others.
-- Socail Login: User can easily create accounts with Socail Login (Google, Github)
-- User Account Setting: Users can create new password and change informaition.
-- Quiz selection: Users can browse and select quizzes from a variety of topics.
-- Quiz timer: Some quizzes may include a timer to challenge users to complete the quiz in a certain amount of time.
-- Scoring and feedback: The app will provide users with their score and feedback on their answers.
+- Designing an intuitive and responsive admin dashboard for easy navigation and efficient management of quiz-related content.
+Displaying key metrics, analytics, and user management tools for admin convenience.
+Questions and Answers CRUD Form:
 
-# Admin View Panel
+- Creating interactive forms for adding, editing, and deleting quiz questions and answers.
+Implementing validation to ensure data integrity and consistency.
+User CRUD Form:
 
-- Dashboard: Dashboard will show total users, total questions, total canditates and latest canditates information.
-- Quiz lists: Administartor can browse all of quizzes and then administrator can CREATE, READ, UPDATE and DELETE of quiz.
-- Categores: Administartor can browse all of categories and then can CREATE, READ, UPDATE and DELETE of categories.
-- Users: Administartor can see all of users informations.
-- Filter: Can filter quiz with cateogory and level
+- Developing user-friendly forms for creating, updating, and deleting user accounts.
+Integrating user role management for fine-grained access control.
 
-# Functionality
+## Questions and Answers CRUD Form:
 
-- Socail Login (GitHub, Google)
-- Authenication and Authorization with JWT Web Token
-- State management with React Context API
-- Fetching API with React Custom hook (CommonApi)
-- Login and Signin fetch with React Custom hooks ( Login, Signup)
-- Edit User Information
-- Protected Routes
+- Creating interactive forms for adding, editing, and deleting quiz questions and answers.
+Implementing validation to ensure data integrity and consistency.
 
-# Tech Used
+## User CRUD Form:
 
-## Frontend
+- Developing user-friendly forms for creating, updating, and deleting user accounts.
+Integrating user role management for fine-grained access control.
 
-- React
-- React Router V6
-- React-hook-form
-- Typescript
-- Axios
-- Tailwind CSS
-
-## Backend
-
-- Node.js
-- Express.js
-- MONGODB
-- JWT Token
-- BCRYPTJS
-
-Icons - Fonts Awesome
-
-# How to Run Local Environment
-
-### Run Backend Server
+## How to Run Local Environment
 
 ```
-$ cd backend
+$ yarn install
 $ yarn start
 ```
-
 ![dashboard](./dashboard.png)
-
-### Run Frontend
-
-```
-$ cd quiz-app
-$ yarn start
-```
-
-![quiz app homepage](./homepage.png)
-
-![quiz app](./quiz.png)
